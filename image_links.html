@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Image Links</title>
+        <style>
+            nav {
+                background-color: #333;
+                padding: 10px 0;
+                text-align: center;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+            }
+            nav a:hover {
+                background-color: #555;
+            }
+            img {
+            max-width: 100%;
+            height: auto;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+        }
+        .menu-item {
+            display: inline-block;
+            margin: 10px;
+            width: 30%;
+            height: 40%;
+        }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Welcome to the Images Webpage</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#menu">Menu</a>
+        </nav>
+
+        <section id="home">
+            <h2 style="text-align: center;">Home</h2>
+            <p style="text-align: center;">Here is an image on Technology!!</p>
+            <a href="images/technology.avif">
+                <img src="images/technology.avif" alt="technology image" style="margin-left: 350px;">
+            </a>
+        </section>
+
+        <section id="gallery">
+            <h2 style="text-align: center;">Gallery</h2>
+            <div class="grid-container">
+                <a href="images/nature1.avif">
+                    <img src="images/nature1.avif" alt="Image of a Canyon">
+                </a>
+                <a href="images/ladybug.avif">
+                    <img src="images/ladybug.avif" alt="Image of a ladybug">
+                </a>
+                <a href="images/croceyes.avif">
+                    <img src="images/croceyes.avif" alt="Image of a crocodile's eyes in water">
+                </a>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 style="text-align: center;">Menu</h2>
+        <div>
+            <div class="menu-item">
+                <a href="images/icecream.avif">
+                    <img src="images/icecream.avif" alt="An image of a bowl of icecream">
+                </a>
+                <p>A bowl of delicious Strawberry Ice cream</p>
+            </div>
+            <div class="menu-item">
+                <a href="images/pomegranate.avif">
+                    <img src="images/pomegranate.avif" alt="An image of a pomegranate">
+                </a>
+                <p>A beautiful sliced ripe Pomegranate fruit.</p>
+            </div>
+            <div class="menu-item">
+                <a href="images/sandwich.avif">
+                    <img src="images/sandwich.avif" alt="An image of a sandwich">
+                </a>
+                <p>Grab a bite of this mouth watering Sandwich</p>
+            </div>
+        </section>
+
+    </body>
+</html>
